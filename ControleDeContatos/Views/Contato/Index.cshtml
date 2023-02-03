@@ -1,6 +1,6 @@
 ﻿@model List<ContatoModel>
 @{
-    ViewData["Title"] = "listagem de contatos";
+    ViewData["Title"] = "Listagem de contatos";
 }
 
 <div class="text-center">
@@ -10,9 +10,27 @@
     </div>
     <br />
 
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="close-alert btn btn-danger btn-sm" arial-label="Close">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="close-alert btn btn-danger btn-sm" arial-label="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+    <br />
+
     <h1 class="display-4">Listagem de contatos</h1>
 
-    <table class="table">
+    <table class="display" style="width:100%" id="table-contatos">
         <thead>
             <tr>
                 <th scope="col">Código</th>
@@ -40,6 +58,10 @@
                         </td>
                     </tr>
                 }
+            }
+            else
+            {
+                <tr class="odd"><td valign="top" colspan="5">Nenhum contato encontrado</td></tr>
             }
         </tbody>
     </table>

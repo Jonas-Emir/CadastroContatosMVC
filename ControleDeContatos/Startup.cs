@@ -1,7 +1,9 @@
 using ControleDeContatos.DataBase;
+using ControleDeContatos.Helper;
 using ControleDeContatos.Repositorio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,9 +28,27 @@ namespace ControleDeContatos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //Config para utilizar o Entity Framework 
             services.AddEntityFrameworkSqlServer().
                 AddDbContext<BancoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DataBase")));
+
+            //Config para sessao do Usuario
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            //Config para ter acesso aos métodos com Interface
             services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+
+            //Adicionado para implementar a Sessao do Usuario
+            services.AddScoped<ISessao, Sessao>();
+
+            //Config para sessao do Usuario
+            services.AddSession(o =>
+            {
+                o.Cookie.HttpOnly = true;
+                o.Cookie.IsEssential = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,11 +68,14 @@ namespace ControleDeContatos
 
             app.UseAuthorization();
 
+            //aplicado para implementar a sessao no projeto
+            app.UseSession();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
