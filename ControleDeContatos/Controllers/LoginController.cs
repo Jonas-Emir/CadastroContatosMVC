@@ -25,7 +25,8 @@ namespace ControleDeContatos.Controllers
         {
             //Se o usuario estiver logado, redirecionar para a home
 
-            if (_sessao.BuscarSessaoDoUsuario() != null) return RedirectToAction("Index", "Home");
+            if (_sessao.BuscarSessaoDoUsuario() != null) 
+                return RedirectToAction("Index", "Home");
 
             return View();
         }

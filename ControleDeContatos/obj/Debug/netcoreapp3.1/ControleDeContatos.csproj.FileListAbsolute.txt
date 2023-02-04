@@ -413,7 +413,6 @@ D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Raz
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Editar.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Index.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -434,3 +433,4 @@ D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Con
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.genruntimeconfig.cache
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.csproj.AssemblyReference.cache
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Menu\Default.cshtml.g.cs
+D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Restrito\Index.cshtml.g.cs
