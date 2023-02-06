@@ -395,6 +395,7 @@ D:\Projetos\C#\ControleDeContatos\ControleDeContatos\bin\Debug\netcoreapp3.1\run
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.csproj.AssemblyReference.cache
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.AssemblyInfoInputs.cache
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.AssemblyInfo.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.csproj.CoreCompileInputs.cache
@@ -414,6 +415,9 @@ D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Raz
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Index.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Login\RedefinirSenha.cshtml.g.cs
+D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Restrito\Index.cshtml.g.cs
+D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Menu\Default.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutDeslogado.cshtml.g.cs
@@ -431,6 +435,3 @@ D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Con
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.dll
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.pdb
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.genruntimeconfig.cache
-D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.csproj.AssemblyReference.cache
-D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Menu\Default.cshtml.g.cs
-D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Restrito\Index.cshtml.g.cs

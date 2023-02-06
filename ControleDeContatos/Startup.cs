@@ -43,6 +43,9 @@ namespace ControleDeContatos
             //Adicionado para implementar a Sessao do Usuario
             services.AddScoped<ISessao, Sessao>();
 
+            services.AddScoped<IEmail, Email>();
+
+
             //Config para sessao do Usuario
             services.AddSession(o =>
             {
