@@ -24,6 +24,7 @@ namespace ControleDeContatos.Models
         public string Senha { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime? DataAtualizacao { get; set; }
+        public virtual List<ContatoModel> Contatos { get; set; }
 
         public bool SenhaValida(string senha)
         {
@@ -32,6 +33,10 @@ namespace ControleDeContatos.Models
         public void SetSenhaHash()
         {
             Senha = Senha.GerarHash();
+        }
+        public void SetNovaSenha(string novaSenha)
+        {
+            Senha = novaSenha.GerarHash();
         }
 
         public string GerarNovaSenha()

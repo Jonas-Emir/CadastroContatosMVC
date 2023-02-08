@@ -96,8 +96,10 @@ namespace ControleDeContatos.Controllers
                             TempData["MensagemSucesso"] = $"Enviamos para seu e-mail cadastrado uma nova senha.";
 
                         }
-                        TempData["MensagemErroLogin"] = $"Não conseguimos enviar o e-mail. Por favor, tente novamente!";
-
+                        else
+                        {
+                            TempData["MensagemErroLogin"] = $"Não conseguimos enviar o e-mail. Por favor, tente novamente!";
+                        }
                         return RedirectToAction("Index", "Login");
                     }
                     TempData["MensagemErroLogin"] = $"Não conseguimos redefinir sua senha. Por favor, verifique os dados informados.";
