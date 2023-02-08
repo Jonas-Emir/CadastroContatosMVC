@@ -6,8 +6,24 @@
 $(document).ready(function () {
     getDataTable('#table-contatos');
     getDataTable('#table-usuarios');
+
+    $('.btn-total-contatos').click(function () {
+        var usuarioId = $(this).attr('usuario-id');
+
+        //Requisição AJAX - é preciso identificar se é Post, Get, Put etc...
+        $.ajax({
+            type: 'GET',
+            url: '/Usuario/ListarContatosPorUsuarioId/' + usuarioId,
+            success: function (result) {
+                $("#listaContatosUsuario").html(result);
+                $('#modalContatosUsuario').modal();
+                getDataTable('#table-contatos-usuario');
+            }
+        });
+    });
 });
 
+//Implementação para Filtragem em JS
 function getDataTable(id) {
     $(id).DataTable({
         "ordering": true,

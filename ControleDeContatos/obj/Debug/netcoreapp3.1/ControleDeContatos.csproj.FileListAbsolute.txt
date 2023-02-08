@@ -436,3 +436,4 @@ D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Con
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.genruntimeconfig.cache
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\ControleDeContatos.csproj.AssemblyReference.cache
 D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\AlterarSenha\Index.cshtml.g.cs
+D:\Projetos\C#\ControleDeContatos\ControleDeContatos\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\_ContatosUsuario.cshtml.g.cs
