@@ -34,6 +34,12 @@ namespace ControleDeContatos.Controllers
             return View();
         }
 
+        public IActionResult NovoCadastro()
+        {
+            //if (_sessao.BuscarSessaoDoUsuario() == null)
+            return RedirectToAction("NovoCadastro");
+        }
+
         public IActionResult RedefinirSenha()
         {
             return View();

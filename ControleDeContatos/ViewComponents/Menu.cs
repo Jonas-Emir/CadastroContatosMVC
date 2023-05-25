@@ -12,7 +12,12 @@ namespace ControleDeContatos.ViewComponents
         {
             string sessaoUsuario = HttpContext.Session.GetString("sessaoUsuarioLogado");
 
-            if (string.IsNullOrEmpty(sessaoUsuario)) return null;
+            if (string.IsNullOrEmpty(sessaoUsuario))
+            {
+                return Content(string.Empty);
+             //   return null;
+            }
+
 
             UsuarioModel usuario = JsonConvert.DeserializeObject<UsuarioModel>(sessaoUsuario);
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vqGKl6GNNyuntzhTlxpVlt+Nt+12+2ZBJD8mEEi1h7v8IzguVw1lJ+MpbhBBfvmYnOsDV0i2IdcYPMcJye2jwA==",
+  "dgSpecHash": "pTGiO+/mlXcvWOpjCJcjz+xh4ylmdYn/u2kvx3uEUhMWkp1Ntco60lfOdTSY6tqa8yssKnTbr+syZ3cXtLDXyQ==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\C#\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj",
+  "projectFilePath": "C:\\Projetos\\CadastroContatosMVC\\ControleDeContatos\\ControleDeContatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

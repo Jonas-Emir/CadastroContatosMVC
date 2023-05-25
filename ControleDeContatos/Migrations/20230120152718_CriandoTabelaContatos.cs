@@ -12,9 +12,9 @@ namespace ControleDeContatos.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<int>(type: "string", nullable: false),
-                    Email = table.Column<int>(type: "string", nullable: false),
-                    Celular = table.Column<int>(type: "string", nullable: false)
+                    Nome = table.Column<int>(type: "nvarchar", nullable: false),
+                    Email = table.Column<int>(type: "nvarchar", nullable: false),
+                    Celular = table.Column<int>(type: "nvarchar", nullable: false)
                 },
                 constraints: table =>
                 {
