@@ -2,14 +2,11 @@
 @{
     ViewData["Title"] = "Listagem de usuários";
 }
-
 <div class="text-center">
-
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <a class="btn btn-primary" role="button" asp-controller="Usuario" asp-action="Criar">Adicionar novo usuário</a>
     </div>
     <br />
-
     @if (TempData["MensagemSucesso"] != null)
     {
         <div class="alert alert-success" role="alert">
@@ -17,7 +14,6 @@
             @TempData["MensagemSucesso"]
         </div>
     }
-
     @if (TempData["MensagemErro"] != null)
     {
         <div class="alert alert-danger" role="alert">
@@ -25,11 +21,8 @@
             @TempData["MensagemErro"]
         </div>
     }
-
     <br />
-
     <h1 class="display-4">Listagem de usuários</h1>
-
     <table id="table-usuarios" class="display" style="width:100%">
         <thead>
             <tr>
@@ -75,7 +68,6 @@
             }
         </tbody>
     </table>
-
     <div id="modalContatosUsuario" class="modal" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -86,10 +78,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                   <div id="listaContatosUsuario"></div>
+                    <div id="listaContatosUsuario"></div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>

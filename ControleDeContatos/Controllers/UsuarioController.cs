@@ -50,7 +50,7 @@ namespace ControleDeContatos.Controllers
                     TempData["MensagemSucesso"] = "Usuário cadastrado com sucesso!";
                     return RedirectToAction("Index");
                 }
-                return View(usuario);
+                return View("Index");
             }
             catch (System.Exception erro)
             {

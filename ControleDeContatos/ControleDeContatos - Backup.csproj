@@ -27,14 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="imgMenu\" />
     <Folder Include="Views\Shared\Components\ImagensMenu\" />
-    <Folder Include="wwwroot\imgViewMenu\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\contatoHome.svg" />
-    <None Include="wwwroot\engrenagem.svg" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

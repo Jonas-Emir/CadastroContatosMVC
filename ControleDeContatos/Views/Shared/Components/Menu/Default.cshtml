@@ -1,5 +1,6 @@
 ﻿@model UsuarioModel
 
+
 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Bem vindo, @Model.Nome</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +14,7 @@
 </form>
 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
     <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+        <ul style="align-items:center" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
             <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Index">Contatos</a>
             </li>
@@ -22,7 +23,7 @@
             </li>
             <li class="dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="" alt="DropDown para Seleção" style="width:45px;height:35px;">
+                    <img src="/person.svg" alt="DropDown para Seleção" style="width:45px;height:35px;">
                 </a>
                 @*VERIFICAR URL DA IMG CARRINHO ICON*@
                 <ul class="dropdown-menu">

@@ -18,7 +18,6 @@ namespace ControleDeContatos.ViewComponents
              //   return null;
             }
 
-
             UsuarioModel usuario = JsonConvert.DeserializeObject<UsuarioModel>(sessaoUsuario);
 
             return View(usuario);
