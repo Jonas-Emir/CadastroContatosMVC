@@ -6,10 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Shared\Components\NovaPasta\**" />
-    <Content Remove="Views\Shared\Components\NovaPasta\**" />
-    <EmbeddedResource Remove="Views\Shared\Components\NovaPasta\**" />
-    <None Remove="Views\Shared\Components\NovaPasta\**" />
+    <Content Remove="wwwroot\css\undraw_people_search_re_5rre.svg" />
   </ItemGroup>
 
   <ItemGroup>

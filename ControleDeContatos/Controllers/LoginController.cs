@@ -24,6 +24,13 @@ namespace ControleDeContatos.Controllers
             _email = email;
         }
 
+        public IActionResult HomeDeslogado()
+        {
+            //Se o usuario estiver logado, redirecionar para a home
+
+            return View();
+        }
+
         public IActionResult Index()
         {
             //Se o usuario estiver logado, redirecionar para a home

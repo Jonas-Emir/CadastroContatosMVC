@@ -18,7 +18,7 @@ arqIgn2.bak
 *.DataBase
 *.Debug
 *.obj
-*.
+*.appsettings.json
 *.
 *.
 
