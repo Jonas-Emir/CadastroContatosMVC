@@ -31,11 +31,22 @@
 
         .navbar-nav {
             align-items: center;
+            color: #ffffff;
         }
 
 
             .navbar-nav .nav-link:hover {
-                color: #007bff;
+                color: #ffffff;
+                transform: scale(1.1);
+            }
+
+            .navbar-nav .nav-link {
+                color: #ffffff;
+                transition: 0.6s;
+            }
+
+            .navbar-nav .nav-item .nav-link {
+                color: #ffffff;
             }
 
         .justifyNav {
@@ -43,7 +54,7 @@
         }
 
         .navitemConta {
-            color: #333;
+            color: #ffffff;
         }
 
         .logo {
@@ -65,14 +76,12 @@
         .navHeader {
             font-family: "Arial", sans-serif;
         }
-
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
-        }
     </style>
 </head>
 
-<body style="background: linear-gradient(0.40turn, #3f87a6, #76D3D2, #051937); ">
+@*<body style="background: linear-gradient(0.40turn, #3f87a6, #76D3D2, #051937); ">*@
+<body style=" background: linear-gradient(45deg, #334d50, #cbcaa5); ">
+
     @*<header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container">
@@ -109,16 +118,18 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <a class="nav-link " asp-area="" asp-controller="Login" asp-action="Index" role="button">
-                       Entre
-                    </a>
+                <div class="navbar-nav">
+                        <div class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Index" role="button">
+                                Entre
+                            </a>
+                        </div>
                 </div>
             </div>
         </nav>
     </header>
     <div class="container">
-        <main role="main" style="padding-top:50px">
+        <main role="main" style="padding-top:15px">
             @RenderBody()
         </main>
     </div>

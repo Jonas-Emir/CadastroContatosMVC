@@ -3,6 +3,19 @@
     Layout = "_LayoutDeslogado";
     ViewData["Title"] = "Redefinir senha";
 
+    <style>
+        .form-container {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 40px;
+        }
+
+        .labelFormRedefinir {
+            color: #ffffff;
+        }
+    </style>
+
     @if (TempData["MensagemErroLogin"] != null)
     {
         <div class="alert alert-danger" role="alert">
@@ -11,18 +24,28 @@
         </div>
     }
 
-    <form asp-controller="Login" asp-action="EnviarLinkParaRedefinirSenha" method="post">
-        <div class="mb-3">
-            <label for="login" class="form-label">Login</label>
-            <input type="text" asp-for="Login" class="form-control" id="login">
+
+    <form class="col-md-4 mx-auto pt-4 form-container" asp-controller="Login" asp-action="EnviarLinkParaRedefinirSenha" method="post">
+        <div class="text-center">
+            <h3 class="display-6" style="color:#ffffff">
+                Redefina sua senha
+            </h3>
+        </div>
+        <div class="row m-3">
+            <label for="login" class="form-label labelFormRedefinir">Login</label>
+            <input type="text" asp-for="Login" class="form-control" id="login" placeholder="Digite seu login">
             @Html.ValidationMessageFor(x => x.Login)
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="text" asp-for="Email" class="form-control" id="email">
+        <div class="row m-3">
+            <label for="email" class="form-label labelFormRedefinir">E-mail</label>
+            <input type="text" asp-for="Email" class="form-control" id="email" placeholder="Digite seu e-mail">
             @Html.ValidationMessageFor(x => x.Email)
         </div>
-        <button type="submit" class="btn btn-primary">Redefinir Senha</button>
-        <a class="btn btn-secondary btn-block" asp-action="Index" asp-controller="Login" role="button">Voltar</a>
+
+        <div class="row g-3 pt-4 d-flex justify-content-center">
+            <div style="width:200px" class="">
+                <button type="submit" style="border-radius: 6px; border-color: #343a40" class="btn btn-dark btn-block">Redefinir Senha</button>
+            </div>
+        </div>
     </form>
 }

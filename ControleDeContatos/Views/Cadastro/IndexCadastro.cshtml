@@ -4,37 +4,54 @@
     Layout = "_LayoutDeslogado";
     ViewData["Title"] = "Criar usuário";
 
+    <style>
+        .form-container {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .labelForm {
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+    </style>
+
     <link rel="stylesheet" href="~/css/site.css" />
 
     <div class="col-md-10 mx-auto">
         <div class="row" style="justify-content:space-evenly; align-items: center">
             <div class="col-12 col-md-6">
-                <img src="https://i.ibb.co/hLBJVzv/undraw-People-search-re-5rre.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <img src="/formAssinando.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             </div>
-            <form class="col-md-4 bg-light" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;" asp-controller="Usuario" asp-action="Criar" method="post">
+            <form class="col-md-4 form-container" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;" asp-controller="Usuario" asp-action="Criar" method="post">
+                <div class="text-center">
+                    <h3 class="display-6" style="color:#ffffff">
+                        Cadastro
+                    </h3>
+                </div>
                 <div class="row mb-2 mt-4 mr-4 ml-4">
-                    <label for="nome" style="color:#6f7881; margin-bottom: 4px" class="form-label">Nome</label>
+                    <label for="nome" class="form-label labelForm">Nome</label>
                     <input type="text" asp-for="Nome" class="form-control" placeholder="Seu nome completo">
                     @Html.ValidationMessageFor(x => x.Nome)
                 </div>
                 <div class="row mb-2 mr-4 ml-4">
-                    <label for="nome" style="color:#6f7881; margin-bottom: 4px" class="form-label">E-mail</label>
+                    <label for="nome" class="form-label labelForm">E-mail</label>
                     <input type="text" asp-for="Email" class="form-control" placeholder="Seu e-mail">
                     @Html.ValidationMessageFor(x => x.Email)
                 </div>
                 <div class="row mb-2 mr-4 ml-4">
-                    <label for="nome" style="color:#6f7881;margin-bottom: 4px" class="form-label">Login</label>
+                    <label for="nome" class="form-label labelForm">Login</label>
                     <input type="text" asp-for="Login" class="form-control" placeholder="Seu login">
                     @Html.ValidationMessageFor(x => x.Login)
                 </div>
                 <div class="row mb-2 mr-4 ml-4">
-                    <label for="nome" style="color:#6f7881;margin-bottom: 4px" class="form-label">Senha</label>
+                    <label for="nome" class="form-label labelForm">Senha</label>
                     <input type="password" asp-for="Senha" class="form-control" placeholder="Sua senha">
                     @Html.ValidationMessageFor(x => x.Senha)
                 </div>
                 <div class="row mb-2 mr-4 ml-4" style="padding-bottom:10px">
-                    <label for="nome" style="color:#6f7881;margin-bottom: 4px" class="form-label">Confirmação de senha</label>
-                    <input type="password" asp-for="Senha" class="form-control" placeholder="Confirme a sua senha">                   
+                    <label for="nome" class="form-label labelForm">Confirmação de senha</label>
+                    <input type="password" asp-for="Senha" class="form-control" placeholder="Confirme a sua senha">
                 </div>
                 <div class="form-group" style="display:none">
                     <label for="nome" class="form-label">Perfil</label>
@@ -44,7 +61,7 @@
                     @Html.ValidationMessageFor(x => x.Perfil)
                 </div>
                 <div class="row mb-4 mr-4 ml-4">
-                    <button type="submit" asp-action="Cadastrar" asp-controller="Cadastro" class="btn btn-primary btn-block btnCadastro" style="border:none;">Cadastrar</button>
+                    <button type="submit" asp-action="Cadastrar" asp-controller="Cadastro" class="btn btn-dark btn-block" style="border:none;">Cadastrar</button>
                 </div>
             </form>
         </div>
