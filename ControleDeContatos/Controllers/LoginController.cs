@@ -55,7 +55,7 @@ namespace ControleDeContatos.Controllers
         public IActionResult Sair()
         {
             _sessao.RemoverSessaoDoUsuario();
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("HomeDeslogado", "Login");
         }
 
         [HttpPost]
