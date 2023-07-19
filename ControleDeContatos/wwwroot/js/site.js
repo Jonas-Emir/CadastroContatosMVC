@@ -9,6 +9,7 @@ $(document).ready(function () {
 
     $('.btn-total-contatos').click(function () {
         var usuarioId = $(this).attr('usuario-id');
+        $('#table-contatos-usuario').addClass('color-table'),
 
         //Requisição AJAX - é preciso identificar se é Post, Get, Put etc...
         $.ajax({
@@ -18,6 +19,7 @@ $(document).ready(function () {
                 $("#listaContatosUsuario").html(result);
                 $('#modalContatosUsuario').modal();
                 getDataTable('#table-contatos-usuario');
+
             }
         });
     });

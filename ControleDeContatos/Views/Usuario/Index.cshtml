@@ -2,6 +2,13 @@
 @{
     ViewData["Title"] = "Listagem de usuários";
 }
+<style>
+
+.title {
+    padding-bottom:50px;
+}
+</style>
+
 <div class="text-center">
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <a class="btn btn-primary" role="button" asp-controller="Usuario" asp-action="Criar">Adicionar novo usuário</a>
@@ -22,8 +29,8 @@
         </div>
     }
     <br />
-    <h1 class="display-4">Listagem de usuários</h1>
-    <table id="table-usuarios" class="display" style="width:100%">
+    <h1 class="" style="padding-bottom:50px; color:white">Listagem de usuários</h1>
+    <table id="table-usuarios" style="width:100%" class="display">
         <thead>
             <tr>
                 <th scope="col">Código</th>

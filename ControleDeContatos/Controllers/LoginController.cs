@@ -72,7 +72,7 @@ namespace ControleDeContatos.Controllers
                         if (usuario.SenhaValida(loginModel.Senha))
                         {
                             _sessao.CriarSessaoDoUsuario(usuario);
-                            return RedirectToAction("Index", "Home");
+                            return RedirectToAction("Index", "Contato");
                         }
                         TempData["MensagemErroLogin"] = $"Senha do usuário inválida, tente novamente!";
                     }
