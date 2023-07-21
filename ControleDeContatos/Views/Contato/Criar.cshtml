@@ -3,30 +3,45 @@
     ViewData["Title"] = "Criar contato";
 }
 
-<div class="text-center">
+<link rel="stylesheet" href="~/css/site.css" />
 
-    <h1 class="display-4">Criar contato</h1>
+<style>
+    .title-position {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+</style>
+
+<div class="title-position">
+    <h1 class="display-4" style=" color:white">Novo contato</h1>
 </div>
 
-<form asp-controller="Contato" asp-action="Criar" method="post">
-    <div class="mb-3">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do contato">
-        @Html.ValidationMessageFor(x => x.Nome)
-    </div>
+    <div class="row">
+        <form class="col-md-6 form-container" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; background-color:white; border-radius:5px" asp-controller="Usuario" asp-action="Criar" method="post">
+            <div class="row mb-2 mt-4 mr-4 ml-4">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do contato">
+                @Html.ValidationMessageFor(x => x.Nome)
+            </div>
+            <div class="row mb-2 mr-4 ml-4">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do contato">
+                @Html.ValidationMessageFor(x => x.Email)
+            </div>
+            <div class="row mb-2 mr-4 ml-4">
+                <label for="celular" class="form-label">Celular</label>
+                <input type="text" asp-for="Celular" class="form-control" placeholder="Digite o celular do contato">
+                @Html.ValidationMessageFor(x => x.Celular)
+            </div>
+            <div class="row mb-4 mr-4 ml-4" style="padding-top:25px">
+                <button type="submit" asp-action="Cadastrar" asp-controller="Cadastro" class="btn btn-dark btn-block" style="border:none;">Cadastrar</button>
+                <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+            </div>
+        </form>
 
-    <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do contato">
-        @Html.ValidationMessageFor(x => x.Email)
+        <div class="col-12 col-md-6">
+            <img src="/img_CadastroContato.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        </div>
     </div>
-
-    <div class="mb-3">
-        <label for="celular" class="form-label">Celular</label>
-        <input type="text" asp-for="Celular" class="form-control" placeholder="Digite o celular do contato">
-        @Html.ValidationMessageFor(x => x.Celular)
-    </div>
-
-    <button type="submit" class="btn btn-primary btn-block">Adicionar</button>
-    <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
-</form>
