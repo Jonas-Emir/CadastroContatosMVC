@@ -3,32 +3,46 @@
     ViewData["Title"] = "Editar contato";
 }
 
-<div class="text-center">
+<style>
+    .title-position {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
 
-    <h1 class="display-4">Editar contato</h1>
+    .buttons-position{
+        padding-top:30px;
+    }
+</style>
+
+<div class="title-position">
+    <h1 class="display-4" style=" color:white">Editar contato</h1>
 </div>
-
-<form asp-controller="Contato" asp-action="Alterar" method="post">
-   
-    <input type="hidden" asp-for="Id" />
-    <div class="mb-3">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do contato">
-        @Html.ValidationMessageFor(x => x.Nome);
+<div class="row">
+    <form class="col-md-6 form-container" style="box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; background-color:white; border-radius:5px" asp-controller="Contato" asp-action="Alterar" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="row mb-2 mt-4 mr-4 ml-4">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do contato">
+            @Html.ValidationMessageFor(x => x.Nome)
+        </div>
+        <div class="row mb-2 mr-4 ml-4">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do contato">
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+        <div class="row mb-2 mr-4 ml-4">
+            <label for="celular" class="form-label">Celular</label>
+            <input type="text" asp-for="Celular" class="form-control" placeholder="Digite o celular do contato">
+            @Html.ValidationMessageFor(x => x.Celular)
+        </div>
+        <div class="row mb-4 mr-4 ml-4 buttons-position">
+            <button type="submit" class="btn btn-dark btn-block">Alterar</button>
+            <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+        </div>
+    </form>
+    <div class="col-12 col-md-6 ">
+        <img src="~/edicao.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
     </div>
-
-    <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do contato">
-        @Html.ValidationMessageFor(x => x.Email);
-    </div>
-
-    <div class="mb-3">
-        <label for="celular" class="form-label">Celular</label>
-        <input type="text" asp-for="Celular" class="form-control" placeholder="Digite o celular do contato">
-        @Html.ValidationMessageFor(x => x.Celular);
-    </div>
-
-    <button type="submit" class="btn btn-primary btn-block">Alterar</button>
-    <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
-</form>
+</div>

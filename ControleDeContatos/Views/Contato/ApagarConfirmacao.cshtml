@@ -3,9 +3,20 @@
     ViewData["Title"] = "Confirmação apagar o contato";
 }
 
-<div class="test-center">
-    <h3>Realmente deseja apagar o contato (@Model.Nome)?</h3>
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Excluir contato</h5>
+        </div>
+        <div class="modal-body">
+            <p>
+                Realmente deseja apagar o contato
+                <strong>@Model.Nome?</strong>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-secondary" role="button" asp-controller="Contato" asp-action="Index">Cancelar</a>
+            <a class="btn btn-danger" role="button" asp-controller="Contato" asp-route-id="@Model.Id" asp-action="Apagar">Excluir</a>
+        </div>
+    </div>
 </div>
-
-<a class="btn btn-primary btn-block" role="button" asp-controller="Contato" asp-action="Index">Cancelar exclusão</a>
-<a class="btn btn-danger btn-block" role="button" asp-controller="Contato" asp-route-id="@Model.Id" asp-action="Apagar">Confirmar exclusão</a>
