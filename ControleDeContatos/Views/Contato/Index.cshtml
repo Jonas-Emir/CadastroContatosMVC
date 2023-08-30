@@ -4,7 +4,7 @@
 }
 
 <style>
-    .card-table{
+    .card-table {
         padding: 29px 29px;
         background-color: white;
         border-radius: 5px;
@@ -16,39 +16,54 @@
         border-radius: 5px;
     }
 
-    .title-position{
-        display:flex;
+    .title-position {
+        display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
         margin-top: 30px;
     }
-
 </style>
 
 <div class="text-center">
+
+    @*@if (TempData["MensagemSucesso"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                <button type="button" class="close-alert btn btn-danger btn-sm" arial-label="Close">X</button>
+                @TempData["MensagemSucesso"]
+            </div>
+        }
+
+        @if (TempData["MensagemErro"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                <button type="button" class="close-alert btn btn-danger btn-sm" arial-label="Close">X</button>
+                @TempData["MensagemErro"]
+            </div>
+        }*@
+
+    <div class="title-position">
+        <h2 class="display-4" style=" color:white">Listagem de contatos</h2>
+        <a style="border-radius: 6px; border-color: #343a40" class="btn btn-dark" role="button" asp-controller="Contato" asp-action="Criar">+ Adicionar novo contato</a>
+    </div>
 
     @if (TempData["MensagemSucesso"] != null)
     {
         <div class="alert alert-success" role="alert">
             <button type="button" class="close-alert btn btn-danger btn-sm" arial-label="Close">X</button>
-            @TempData["MensagemSucesso"]
+            <img style="width:25px" src="./iconeCheck.svg" />
+            <strong>@TempData["MensagemSucesso"]</strong>
         </div>
     }
 
     @if (TempData["MensagemErro"] != null)
     {
-        <div class="alert alert-danger" role="alert">
-            <button type="button" class="close-alert btn btn-danger btn-sm" arial-label="Close">X</button>
-            @TempData["MensagemErro"]
-        </div>
-    }
-
-<div class="title-position">
-    <h2 class="display-4" style=" color:white">Listagem de contatos</h2>
-    <a style="border-radius: 6px; border-color: #343a40" class="btn btn-dark" role="button" asp-controller="Contato" asp-action="Criar">+ Adicionar novo contato</a>
+<div class="alert alert-danger" role="alert">
+    <button type="button" class="close-alert btn btn-danger btn-sm" arial-label="Close">X</button>
+    <img style="width:25px" src="./iconeAlerta.svg" />
+    <strong>  @TempData["MensagemErro"] </strong>
 </div>
-
-
+    }
 
     <div class="card-table">
         <table class="display" style="width:100%" id="table-contatos">
