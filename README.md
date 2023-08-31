@@ -48,6 +48,10 @@ Este projeto é uma aplicação Web desenvolvida em ASP.NET Core, que utiliza o 
 <p align="justify">Após iniciar a aplicação, acesse-a em seu navegador através do seu localhost (http://localhost:5000). <br>
 A partir daí, você poderá interagir com a aplicação, criar um login e senha para o acesso na plataforma e realizar o seu cadastro de contatos! Dentro da aplicação é possível inserir novos contatos que ficarão presentes em uma tabela sendo possível realizar a edição, exclusão e inserção dos contatos cadastrados.</p>
 
+## `Branch: Update`
+
+## `Branch: Primeira Versão`
+
 ## Contribuição
 <p>Contribuições são bem-vindas! Caso você encontre algum problema, tenha alguma ideia de melhoria ou queira adicionar novas funcionalidades, sinta-se à vontade para criar uma issue ou enviar um pull request.</p>
 
