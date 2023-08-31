@@ -12,16 +12,13 @@
 
 - [Contribuição](#contribuicao)
 
-<hr>
 
 ## Descrição
 
 <p align="justify">
-Este projeto é uma aplicação Web desenvolvida em ASP.NET Core, que utiliza o Entity Framework para a persistência de dados, ele foi criado com o objetivo de treinar alguns conhecimentos adquiridos em Entity Framework, como configurar o Entity Framework, estrutura MVC e realizar operações de CRUD (Create, Read, Update, Delete) no banco de dados utilizando migrations, injeção de dependência e consultas com LINQ. <br>
-O Projeto permite a criação de Login com Senha para o usuário realizar seu cadastro e acessar seus cadastros de contatos, dentro da aplicação é possível inserir novos contatos que ficarão presentes em uma tabela. É possível realizar a edição, exclusão e inserção dos Contatos.
+Este projeto é uma aplicação Web desenvolvida em ASP.NET Core, que utiliza o Entity Framework para a persistência de dados, ele foi criado com o objetivo de treinar alguns conhecimentos adquiridos em Entity Framework, como configurar o Entity Framework, estrutura MVC e realizar operações de CRUD (Create, Read, Update, Delete) no banco de dados utilizando migrations, injeção de dependência e consultas com LINQ.
 </p>
 
-<hr>
 
 ## Recursos
 
@@ -33,7 +30,6 @@ O Projeto permite a criação de Login com Senha para o usuário realizar seu ca
 
 :heavy_check_mark: `4` Javascript e Bootstrap.
 
-<hr>
 
 ## Instalação
 
@@ -47,4 +43,11 @@ O Projeto permite a criação de Login com Senha para o usuário realizar seu ca
 - Inicie a aplicação: dotnet run.
   
 </p>
+
+## Uso
+<p align="justify">Após iniciar a aplicação, acesse-a em seu navegador através do seu localhost (http://localhost:5000). <br>
+A partir daí, você poderá interagir com a aplicação, criar um login e senha para o acesso na plataforma e realizar o seu cadastro de contatos! Dentro da aplicação é possível inserir novos contatos que ficarão presentes em uma tabela sendo possível realizar a edição, exclusão e inserção dos contatos cadastrados.</p>
+
+## Contribuição
+<p>Contribuições são bem-vindas! Caso você encontre algum problema, tenha alguma ideia de melhoria ou queira adicionar novas funcionalidades, sinta-se à vontade para criar uma issue ou enviar um pull request.</p>
 
