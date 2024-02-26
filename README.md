@@ -2,15 +2,15 @@
 
 ## Tópicos 
 
-- [Descrição](#descricao)
+- [Descrição](#descrição)
 
 - [Recursos](#recursos)
 
-- [Instalação](#instalacao)
+- [Instalação](#instalação)
 
 - [Uso](#uso)
 
-- [Contribuição](#contribuicao)
+- [Contribuição](#contribuição)
 
 ## Descrição
 
