@@ -1,16 +1,16 @@
-<h1 align="center">Plataforma para Controle de Contatos</h1> 
+<h1 align="center">Plataforma para Cadastro de Contatos</h1> 
 
 ## Tópicos 
 
-- [Descrição](#descricao)
+- [Descrição](#descrição)
 
 - [Recursos](#recursos)
 
-- [Instalação](#instalacao)
+- [Instalação](#instalação)
 
 - [Uso](#uso)
 
-- [Contribuição](#contribuicao)
+- [Contribuição](#contribuição)
 
 ## Descrição
 
