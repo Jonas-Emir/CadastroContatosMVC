@@ -1,4 +1,4 @@
-<h1 align="center">Plataforma para Controle de Contatos</h1> 
+<h1 align="center">Plataforma para Cadastro de Contatos</h1> 
 
 ## Tópicos 
 
